@@ -1,4 +1,4 @@
-ource "aws_iam_role" "ec2_role" { 
+resource "aws_iam_role" "ec2_role" { 
   name = "ec2-role"
 
   assume_role_policy = jsonencode({
