@@ -23,12 +23,9 @@ resource "aws_iam_instance_profile" "ec2_instance_profile" {
 resource "aws_instance" "ec2" {
   ami           = "ami-084a7d336e816906b"
   instance_type = "t3.micro"
-
-  iam_instance_profile = aws_iam_instance_profile.ec2_instance_profile.name
+  subnet_id     = "subnet-02eea723d3da737bd"
 
   tags = {
-    Name = "public-1"
+    Name = "server"
   }
 }
-
-
