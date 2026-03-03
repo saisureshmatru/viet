@@ -4,6 +4,6 @@ resource "aws_instance" "example" {
   instance_type = "t3.micro"              # Free tier eligible
 
   tags = {
-    Name = "server"
+    Name = "dev"
   }
 }
